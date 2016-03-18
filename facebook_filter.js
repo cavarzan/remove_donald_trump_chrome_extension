@@ -82,8 +82,7 @@ function show(node, left) {
                     if (text !== undefined) {
                       for (var i=0; i< key.length; i++) {
                         if (text.toLowerCase().indexOf(key[i]) > 0 && nodes[ii].style.display != 'none') {
-                          // nodes[ii].style.display = 'none';
-                          nodes[ii].innerHTML = '<p style="margin-left:10px;">Post removido =)</p>';
+                          nodes[ii].style.display = 'none';
                           break;
                           // chrome.runtime.sendMessage({action: "politicaRemovida"});
                         }
