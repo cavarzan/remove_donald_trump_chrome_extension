@@ -1,7 +1,7 @@
 {
     "name": "Pausa Politica no Facebook",
     "description": "Remove posts de política do facebook. Mais espaço para gifs de cães e gatos. Não é perfeito mas dá uma limpada boa.",
-    "version": "0.2",
+    "version": "0.3",
     "manifest_version": 2,
     "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
     "icons": {  "48": "icon48.png",

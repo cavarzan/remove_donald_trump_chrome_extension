@@ -1,12 +1,23 @@
 
+function show(node, left) {
+  left = nodes[ii];
+}
 (function() {
   var key = [
     'dilma',
     'lula',
     'sergio moro',
     'juiz moro',
+    'aécio neves',
+    'aecio neves',
+    'fernando henrique cardoso',
+    'alckmin',
+    'beto richa',
+    'eduardo paes',
     'psdb',
     'pmdb',
+    'fhc',
+    'grampo',
     ' pt ',
     'republica de curitiba',
     'republicadecuritiba',
@@ -28,9 +39,12 @@
     'petrolão',
     'stf',
     'ministro',
+    'casa civil',
     'presidente',
     'presidenta', // HUEHUHEUHUEHEUHE
     'beto richa',
+    'crise política',
+    'crise politica',
     'ministra',
     'governador',
     'governadora',
@@ -39,12 +53,24 @@
     'governo',
     'tiririca', // HEUHUEHUHEUHEHUHEUUEHUEHUEHUEH
     'coxinha',
+    'vem pra rua',
+    'vamos pra rua',
+    'vamos para a rua',
+    'não vai ter golpe',
+    'nãovaitergolpe',
+    'naovaitergolpe',
     'Casa Civil',
+    'feliciano',
+    ' psd ',
+    ' prb ',
+    'foro privilegiado',
+    ' dem ',
     'JUSTIÇA FEDERAL',
     'Poder Judiciário',
     'petralha',
     'impeachment',
-    'bolsonaro'];
+    'bolsonaro'
+  ];
 
     var observer = new MutationObserver(function(mutations) {
         mutations.forEach(function(mutation) {
@@ -56,9 +82,10 @@
                     if (text !== undefined) {
                       for (var i=0; i< key.length; i++) {
                         if (text.toLowerCase().indexOf(key[i]) > 0 && nodes[ii].style.display != 'none') {
-                          nodes[ii].style.display = 'none';
-                          nodes[ii].text ="huehue";
-                          chrome.runtime.sendMessage({action: "politicaRemovida"});
+                          // nodes[ii].style.display = 'none';
+                          nodes[ii].innerHTML = '<p style="margin-left:10px;">Post removido =)</p>';
+                          break;
+                          // chrome.runtime.sendMessage({action: "politicaRemovida"});
                         }
                       }
                     }
